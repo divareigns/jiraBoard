@@ -25,3 +25,12 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+Below are the working application screenshots:
+
+1.List and Cards are added
+![image](https://user-images.githubusercontent.com/68510133/229370749-c91337e1-9ee1-4528-b66a-fb7d9717e5e4.png)
+
+2.cards are moved
+![image](https://user-images.githubusercontent.com/68510133/229370870-93c8ae5f-7422-4ec8-90f2-2eff5fa91f21.png)
+
