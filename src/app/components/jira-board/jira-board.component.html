@@ -1,0 +1,45 @@
+<h1 class="title">JIRA Board (Vetty Assignment)</h1>
+<br>
+<hr>
+<div style="text-align: right;">
+  <button class="btn btn-primary " (click)="addList()">Add List</button>
+</div>
+
+<div class="container">
+  <div class="row" *ngIf="jiraBoardData != null">
+    <div class="col jiralist" *ngFor="let list of jiraBoardData" (drop)="drop($event,list)" (dragover)="allowdrop($event)">
+      <div class="row" >
+        <div class="col">
+          <h2 class="title">{{list.listName}}</h2>
+        </div>
+        <div class="col cancelicon">
+          <img class="icons" src="../../../assets/iconclose.png" (click)="deleteList(list)" alt="deleteList">
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col jiracard" *ngFor="let card of list.cards" >
+          <div class="cancelicon">
+
+              <img class="icons" src="../../../assets/iconclose.png" (click)="deletecard(list,card)" alt="deletecard">
+
+          </div>
+          <div class="row" draggable="true" (dragstart)="drag($event,card,list)">
+            <div class="col">
+              <h3>{{card.cardTitle}}</h3>
+            </div>
+          </div>
+          <hr>
+          <h4>{{card.cardDesc}}</h4>
+          <hr>
+          <h6>{{getdate(card.createdOn)}}</h6>
+        </div>
+      </div>
+      <div>
+        <img class="icons add" src="../../../assets/iconadd.png" (click)="addCard(list)" alt="addcard">
+      </div>
+
+    </div>
+  </div>
+
+</div>

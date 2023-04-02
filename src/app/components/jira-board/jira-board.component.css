@@ -1,0 +1,26 @@
+.jiralist{
+  border: solid grey;
+  border-radius: 1mm;
+  margin: 0 2px;
+}
+.jiracard{
+  border: solid black;
+  border-radius: 1mm;
+  margin: 2px 2px;
+}
+.title{
+  text-align: center;
+}
+
+.icons{
+  cursor: pointer;
+}
+
+.add{
+  text-align: center;
+  bottom: 0;
+}
+
+.cancelicon{
+  text-align: right;
+}

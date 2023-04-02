@@ -1,0 +1,18 @@
+<body>
+
+
+  <div mat-dialog-content >
+    <mat-form-field>
+      <label>Enter card title</label>
+      <input type="text" [(ngModel)]="data.cardTitle"  required>
+      <label >Enter card description</label>
+      <input type="text" [(ngModel)]="data.cardDesc"  required>
+    </mat-form-field>
+
+      <div mat-dialog-actions>
+        <button mat-raised-button (click)="exit()">cancel</button>
+        <button mat-raised-button (click)="sendData()" [mat-dialog-close]="data">Ok</button>
+
+      </div>
+  </div>
+</body>

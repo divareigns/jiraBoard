@@ -1,0 +1,15 @@
+<body>
+  <h5 mat-dialog-title>Enter list name</h5>
+
+  <div mat-dialog-content class="">
+    <mat-form-field>
+      <input type="text" [(ngModel)]="data.Name" >
+    </mat-form-field>
+
+      <div mat-dialog-actions>
+        <button mat-raised-button (click)="exit()">cancel</button>
+        <button mat-raised-button [mat-dialog-close]="data.Name">create</button>
+
+      </div>
+  </div>
+</body>
